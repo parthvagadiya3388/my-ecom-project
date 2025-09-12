@@ -111,7 +111,7 @@ export default function ProductDetailPage() {
     <div className="container mx-auto px-4 py-10">
       {/* Notification Toast */}
       {notification.show && (
-        <div className="fixed top-4 right-4 bg-[#9A3F3F] text-white px-4 py-2 rounded-lg shadow-lg z-50 animate-fadeIn">
+        <div className="fixed top-4 right-4 bg-[#9A3F3F] text-white px-4 py-2 rounded-lg shadow-lg z-1030 animate-fadeIn">
           {notification.message}
         </div>
       )}
@@ -158,7 +158,7 @@ export default function ProductDetailPage() {
               <FaHeart
                 className={`w-5 h-5 ${
                   isWishlisted 
-                    ? "text-red-500 fill-current animate-pulse" 
+                    ? "text-red-500 fill-current animate-pulse"
                     : "text-gray-400 hover:text-red-300 transition-colors"
                 }`}
               />
@@ -173,7 +173,7 @@ export default function ProductDetailPage() {
           {/* thumbnails */}
           <div
             ref={galleryRef}
-            className="mt-5 flex gap-3 overflow-x-auto py-2 scrollbar-thin scrollbar-thumb-[#9A3F3F] scrollbar-track-gray-100"
+            className="p-2 mt-5 flex gap-3 overflow-x-auto py-2 scrollbar-thin scrollbar-thumb-[#9A3F3F] scrollbar-track-gray-100"
           >
             {(product.images ?? [product.image]).map((src, idx) => (
               <button
@@ -431,7 +431,7 @@ export default function ProductDetailPage() {
           <nav className="flex gap-8">
             <button
               onClick={() => setActiveTab("description")}
-              className={`py-4 px-1 font-medium transition-all ${
+              className={`py-2 px-1 font-medium transition-all ${
                 activeTab === "description"
                   ? "border-b-2 border-[#9A3F3F] text-[#9A3F3F]"
                   : "text-gray-500 hover:text-gray-700"
@@ -441,7 +441,7 @@ export default function ProductDetailPage() {
             </button>
             <button
               onClick={() => setActiveTab("info")}
-              className={`py-4 px-1 font-medium transition-all ${
+              className={`py-2 px-1 font-medium transition-all ${
                 activeTab === "info"
                   ? "border-b-2 border-[#9A3F3F] text-[#9A3F3F]"
                   : "text-gray-500 hover:text-gray-700"
@@ -451,7 +451,7 @@ export default function ProductDetailPage() {
             </button>
             <button
               onClick={() => setActiveTab("reviews")}
-              className={`py-4 px-1 font-medium transition-all ${
+              className={`py-2 px-1 font-medium transition-all ${
                 activeTab === "reviews"
                   ? "border-b-2 border-[#9A3F3F] text-[#9A3F3F]"
                   : "text-gray-500 hover:text-gray-700"
@@ -467,7 +467,7 @@ export default function ProductDetailPage() {
             <div className="prose max-w-none text-gray-700">
               <h3 className="text-xl font-semibold mb-4 text-[#9A3F3F]">Product Description</h3>
               <p className="leading-relaxed">{product.description}</p>
-              
+
               {product.features && (
                 <div className="mt-6">
                   <h4 className="font-semibold mb-3">Key Features</h4>
