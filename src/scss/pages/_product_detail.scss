@@ -1,0 +1,23 @@
+/* thumbnail scrollbar nicer */
+div[ref]::-webkit-scrollbar,
+.gallery-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+div[ref]::-webkit-scrollbar-thumb,
+.gallery-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.12);
+  border-radius: 999px;
+}
+
+/* image zoom subtle */
+.product-zoom {
+  transition: transform 0.3s ease;
+}
+.product-zoom:hover {
+  transform: scale(1.03);
+}
+
+/* keep related scroller spaced */
+.related-scroll {
+  -webkit-overflow-scrolling: touch;
+}

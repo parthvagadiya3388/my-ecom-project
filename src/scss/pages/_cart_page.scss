@@ -1,0 +1,53 @@
+/* Glass effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  // backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Qty Buttons */
+.qty-btn {
+  border-radius: 50% !important;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cart Table */
+.cart-table tbody tr:hover {
+  background-color: #fff7f2;
+  transition: 0.3s ease;
+}
+
+.cart-table th {
+  vertical-align: middle;
+  background-color: #fef2f2;
+}
+
+
+/* Sticky Summary Card */
+.summary-card {
+  top: 100px;
+  padding: 1rem;
+}
+
+/* Theme Button */
+.btn-theme {
+  background: linear-gradient(135deg, #9A3F3F, #C1856D);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.btn-theme:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.sticky-summary {
+  position: sticky;
+  top: 100px; /* adjust based on navbar */
+  z-index: 10;
+}

@@ -1,0 +1,115 @@
+/* Navbar Brand */
+.brand-main {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #9A3F3F, #C1856D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.brand-tagline {
+  display: block;
+  font-size: 0.8rem;
+  color: #6c757d;
+  margin-top: -4px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  position: relative;
+  font-weight: 500;
+  color: #333 !important;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #9A3F3F !important;
+}
+.navbar-nav .nav-link.active {
+  color: #9A3F3F !important;
+  font-weight: 700;
+  // border-bottom: 2px solid #9A3F3F;
+  background-color: #fef2f2;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 82;
+  bottom: 16px;
+  width: 0;
+  height: 2px;
+  transition: width 0.3s ease;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+.dropdown-item:hover {
+  background: #fef2f2;
+  color: #9A3F3F;
+}
+
+/* Search Box */
+.search-box {
+  position: relative;
+}
+.search-box .search-input {
+  padding: 8px 32px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+.search-box .search-input:focus {
+  border-color: #9A3F3F;
+  box-shadow: 0 0 6px rgba(154,63,63,0.3);
+  outline: none;
+}
+.search-box .search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.search-box .search-icon:hover {
+  color: #9A3F3F;
+}
+
+/* Icons (Wishlist, User, Cart) */
+.nav-icon {
+  font-size: 1.2rem;
+  margin: 0 8px;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+.nav-icon:hover {
+  transform: scale(1.2);
+  color: #9A3F3F;
+}
+
+/* Cart Badge */
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  font-size: 0.7rem;
+  border-radius: 50%;
+  animation: pop 0.3s ease;
+}
+@keyframes pop {
+  0% { transform: scale(0.6); }
+  100% { transform: scale(1); }
+}

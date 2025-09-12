@@ -1,0 +1,23 @@
+/* index.css */
+.circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.floating {
+  animation: updown 4s ease-in-out infinite;
+}
+
+@keyframes updown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}

@@ -1,0 +1,143 @@
+.custom-navbar {
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+.custom-navbar .brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.custom-navbar .brand-main {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #C1856D;
+  letter-spacing: -0.5px;
+}
+
+.custom-navbar .brand-tagline {
+  font-size: 0.7rem;
+  color: #6c757d;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.custom-navbar .nav-link {
+  font-weight: 500;
+  color: #495057 !important;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem !important;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #3a0ca3 !important;
+  background-color: #fef2f2;
+}
+
+.nav-actions {
+  position: relative;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  border: 1px solid #dee2e6;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  width: 220px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3a0ca3;
+  box-shadow: 0 0 0 0.2rem rgba(58, 12, 163, 0.15);
+  width: 280px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  color: #6c757d;
+  z-index: 10;
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+  color: #495057;
+  margin: 0 0.5rem;
+  padding: 0.5rem !important;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.nav-icon:hover {
+  color: #3a0ca3 !important;
+  background-color: #fef2f2;
+  transform: translateY(-2px);
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 0.6rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 7px rgba(220, 53, 69, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .search-box {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  
+  .search-input {
+    width: 100%;
+  }
+  
+  .search-input:focus {
+    width: 100%;
+  }
+  
+  .nav-actions {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  
+  .nav-icon {
+    margin: 0.5rem;
+  }
+}
