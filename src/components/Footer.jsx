@@ -8,7 +8,7 @@ const Footer = () => {
         
         {/* Brand / About */}
         <div>
-          <h2 className="text-2xl font-bold mb-3">FashionHub</h2>
+          <h2 className="text-2xl font-bold mb-3">ElectroMart</h2>
           <p className="text-sm text-[#E6CFA9]">
             Your one-stop shop for electronics, gadgets, and accessories.
           </p>

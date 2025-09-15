@@ -47,7 +47,7 @@ export default function About() {
             {/* Text Section */}
             <div className="col-md-6">
               <h1 className="fw-bold display-4 mb-3">
-                About <span style={{ color: "#E6CFA9" }}>FashionHub</span>
+                About <span style={{ color: "#E6CFA9" }}>ElectroMart</span>
               </h1>
               <p className="lead">
                 Redefining electronic shopping with premium products & trusted brands.  
@@ -94,7 +94,7 @@ export default function About() {
           <Col md={6}>
             <h2 className="fw-bold mb-3">Our Story</h2>
             <p className="text-muted">
-              At <strong>FashionHub</strong>, we believe shopping should be
+              At <strong>ElectroMart</strong>, we believe shopping should be
               simple, reliable, and enjoyable. From premium electronics to
               everyday essentials, we bring the best deals straight to your
               doorstep. Our mission is to deliver quality products with fast

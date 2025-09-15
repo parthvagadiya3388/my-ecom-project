@@ -22,7 +22,7 @@ export default function Header() {
       <Container>
         {/* Brand */}
         <Navbar.Brand as={NavLink} to="/" className="brand">
-          <span className="brand-main">FashionHub</span>
+          <span className="brand-main">ElectroMart</span>
           <span className="brand-tagline">Premium Shopping</span>
         </Navbar.Brand>
 
