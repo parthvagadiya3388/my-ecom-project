@@ -34,23 +34,24 @@ const categories = [
   },
 ];
 
-
 export default function Categories() {
   return (
-    <div className="container">
-      <h2 className="mb-4 text-center">Shop by Categories</h2>
-      <div className="row">
+    <div className="container py-3">
+      <h2 className="mb-4 text-center fw-bold text-uppercase">Shop by Categories</h2>
+      <div className="row g-4">
         {categories.map((category) => (
-          <div key={category.id} className="col-md-4 col-sm-6 mb-4">
+          <div key={category.id} className="col-lg-4 col-md-6 col-sm-12">
             <Link to={`/category/${category.id}`} className="text-decoration-none">
-              <div className="card h-100 shadow-sm category-card">
-                <img
-                  src={category.image}
-                  alt={category.name}
-                  className="card-img-top"
-                />
-                <div className="card-body text-center">
-                  <h5 className="card-title">{category.name}</h5>
+              <div className="card h-100 border-0 shadow category-card overflow-hidden">
+                <div className="position-relative">
+                  <img
+                    src={category.image}
+                    alt={category.name}
+                    className="card-img-top category-img"
+                  />
+                  <div className="overlay d-flex justify-content-center align-items-center">
+                    <h5 className="text-white fw-bold">{category.name}</h5>
+                  </div>
                 </div>
               </div>
             </Link>
