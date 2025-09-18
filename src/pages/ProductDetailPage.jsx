@@ -16,6 +16,8 @@ import {
 import { useCart } from "../context/CartContext";
 import { useWishlist } from "../context/WishlistContext";
 import products from "../data/products";
+import WatchOverlayImage from "./WatchOverlayImage";
+import ProductZoom from "./ProductZoom";
 
 export default function ProductDetailPage() {
   const { id } = useParams();
@@ -124,7 +126,7 @@ export default function ProductDetailPage() {
             onMouseEnter={() => setIsZoomed(true)}
             onMouseLeave={() => setIsZoomed(false)}
           >
-            <img
+            <ProductZoom
               src={product.images?.[imgIndex] ?? product.image}
               alt={product.name}
               className={`w-full object-cover transition-transform duration-500 ease-out ${
@@ -132,6 +134,7 @@ export default function ProductDetailPage() {
               }`}
               style={{ maxHeight: 520 }}
             />
+            {/* <WatchOverlayImage /> */}
 
             {/* Navigation arrows */}
             <button
